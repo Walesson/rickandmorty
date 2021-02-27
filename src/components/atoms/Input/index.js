@@ -7,7 +7,7 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
-  max-width: 164px;
+  max-width: 196px;
   border: 2px solid ${({ theme }) => theme.colors.light.main};
   border-radius: 8px;
   background: transparent;
@@ -15,5 +15,9 @@ export const Input = styled.input`
   outline: none;
   &::placeholder {
     color: ${({ theme }) => theme.colors.placeholder.main};
+  }
+
+  @media (max-width: 420px) {
+    max-width: 164px;
   }
 `

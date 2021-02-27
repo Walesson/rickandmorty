@@ -6,6 +6,7 @@ import BackgroundPage from '~/assets/images/Background.png'
 export const Wrapper = styled.div`
   display: flex;
   flex: 1;
+  min-height: 100vh;
   background: url('${BackgroundPage}') center no-repeat;
   background-size: cover;
 `

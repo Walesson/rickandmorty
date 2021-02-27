@@ -14,6 +14,9 @@ export const Form = styled.form`
   width: 296px;
   justify-content: space-between;
   margin-right: 16px;
+  @media (max-width: 420px) {
+    width: 256px;
+  }
 `
 
 export const Input = styled(UnstyledInput)``

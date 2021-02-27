@@ -6,6 +6,7 @@ export const Search = ({ placeholder, onSubmit }) => {
     event.preventDefault()
     onSubmit()
   }
+
   return (
     <Wrapper>
       <Form onSubmit={submit}>

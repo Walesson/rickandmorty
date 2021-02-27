@@ -13,9 +13,9 @@ export const AppTheme = {
       main: '#FFF',
     },
     dark: {
-      light: '#CCC',
-      main: '#111',
-      dark: '#000',
+      light: '#606060',
+      main: '#111111',
+      dark: '#000000',
     },
     placeholder: {
       main: '#9F9F9F',

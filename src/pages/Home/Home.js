@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useQuery } from '@apollo/client'
-
 import { getRicks } from '~/services/API'
-import { Search } from '~/components/molecules'
-import { Wrapper, Overlay, Container, Header, Text, Logo } from './styles'
+import { Search, Loading, Card } from '~/components/molecules'
+import { Wrapper, Overlay, Container, Header, Logo } from './styles'
 
 export const Home = () => {
   const { data } = useQuery(getRicks)
@@ -14,9 +13,20 @@ export const Home = () => {
     }
   }, [data])
 
+  // useEffect(() => {
+  //   if (openLoading !== loading) {
+  //     setOpenLoading(loading)
+  //   }
+  // }, [loading])
+
+  const handleCharacter = (character) => {
+    console.info('handle', character)
+  }
+
   return (
     <Wrapper>
       <Overlay>
+        <Loading open={characters.length <= 0} />
         <Container>
           <Header>
             <Logo />
@@ -27,7 +37,14 @@ export const Home = () => {
           </Header>
 
           {characters.map((character) => (
-            <Text key={character.id}>{character.name}</Text>
+            <Card
+              key={character.id}
+              img={character.image}
+              status={character.status}
+              title={character.name}
+              subTitle={character.species}
+              onClick={() => handleCharacter(character)}
+            />
           ))}
         </Container>
       </Overlay>
