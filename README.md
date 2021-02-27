@@ -1,3 +1,1 @@
 # Rick and Morty
-
-> project
