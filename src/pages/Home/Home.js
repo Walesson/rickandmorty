@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { getRicks } from '~/services/API'
-import { Search, Loading, Card } from '~/components/molecules'
+import { Search, Loading, ListCharacters } from '~/components'
 import { Wrapper, Overlay, Container, Header, Logo } from './styles'
 
 export const Home = () => {
@@ -35,17 +35,10 @@ export const Home = () => {
               onSubmit={() => console.info('home submit')}
             />
           </Header>
-
-          {characters.map((character) => (
-            <Card
-              key={character.id}
-              img={character.image}
-              status={character.status}
-              title={character.name}
-              subTitle={character.species}
-              onClick={() => handleCharacter(character)}
-            />
-          ))}
+          <ListCharacters
+            characters={characters}
+            handleCharacter={handleCharacter}
+          />
         </Container>
       </Overlay>
     </Wrapper>

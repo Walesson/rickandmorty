@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   background: url(${({ src }) => src}) no-repeat center;
   background-size: cover;
   position: relative;
-  margin: 10px;
   border: 2px solid ${({ theme }) => theme.colors.dark.light};
   box-sizing: border-box;
   border-radius: 8px;
