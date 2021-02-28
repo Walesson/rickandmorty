@@ -32,31 +32,3 @@ export const getRicks = gql`
     }
   }
 `
-
-// import { gql } from '@apollo/client'
-// import { HttpClient } from '../config'
-
-// export const getRicks = async () => {
-//   try {
-//     const resp = await HttpClient.query({
-//       query: gql`
-//         query GetRicks {
-//           characters(page: 2, filter: { name: "rick" }) {
-//             info {
-//               count
-//             }
-//             results {
-//               id
-//               name
-//             }
-//           }
-//         }
-//       `,
-//     })
-//     return resp
-//   } catch (error) {
-//     throw {
-//       httpError: error,
-//     }
-//   }
-// }

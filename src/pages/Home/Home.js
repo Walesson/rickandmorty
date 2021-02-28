@@ -1,23 +1,46 @@
 import React, { useEffect, useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { getRicks } from '~/services/API'
-import { Text } from '~/components/atoms'
-import { Wrapper } from './styles'
+import { Search, Loading, ListCharacters } from '~/components'
+import { Wrapper, Overlay, Container, Header, Logo } from './styles'
 
 export const Home = () => {
-  const { loading, error, data } = useQuery(getRicks)
+  const { data } = useQuery(getRicks)
   const [characters, setCharacters] = useState([])
   useEffect(() => {
-    console.info('data:', data, loading, error)
     if (data && data?.characters) {
       setCharacters(data.characters.results)
     }
   }, [data])
+
+  // useEffect(() => {
+  //   if (openLoading !== loading) {
+  //     setOpenLoading(loading)
+  //   }
+  // }, [loading])
+
+  const handleCharacter = (character) => {
+    console.info('handle', character)
+  }
+
   return (
     <Wrapper>
-      {characters.map((character) => (
-        <Text key={character.id}>{character.name}</Text>
-      ))}
+      <Overlay>
+        <Loading open={characters.length <= 0} />
+        <Container>
+          <Header>
+            <Logo />
+            <Search
+              placeholder='Search characters'
+              onSubmit={() => console.info('home submit')}
+            />
+          </Header>
+          <ListCharacters
+            characters={characters}
+            handleCharacter={handleCharacter}
+          />
+        </Container>
+      </Overlay>
     </Wrapper>
   )
 }
