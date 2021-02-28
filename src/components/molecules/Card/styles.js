@@ -13,10 +13,12 @@ export const Wrapper = styled.div`
   filter: grayscale(${({ status }) => (status === 'Alive' ? 0 : 1)});
   cursor: pointer;
   overflow: hidden;
+  transition: all 0.3s ease-in;
 
   &:hover {
     border-color: ${({ theme }) => theme.colors.secondary.main};
     box-shadow: 0 3px 8px ${({ theme }) => theme.colors.secondary.main};
+    transform: scale(1.2);
   }
 `
 

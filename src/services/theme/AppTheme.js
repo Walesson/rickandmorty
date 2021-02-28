@@ -22,8 +22,9 @@ export const AppTheme = {
     },
     text: {
       main: '#D3D3D3',
+      subtle: '#8C8C8C',
     },
-    boder: {
+    border: {
       main: '#161616',
     },
   },

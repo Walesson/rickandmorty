@@ -2,7 +2,10 @@ import React from 'react'
 import { Card } from '~/components/molecules'
 import { Wrapper, Item } from './styles'
 
-export const ListCharacters = ({ characters = [], handleCharacter }) => (
+export const ListCharacters = ({
+  characters = [],
+  handleCharacter = () => null,
+}) => (
   <Wrapper>
     {characters.map((character) => (
       <Item key={character.id}>

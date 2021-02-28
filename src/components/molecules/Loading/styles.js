@@ -1,23 +1,6 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { Text } from '~/components/atoms'
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`
+import { fadeIn, fadeOut } from '~/services/theme'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -27,11 +10,11 @@ export const Wrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  animation: ${({ open }) => (open ? fadeIn : fadeOut)} 0.8s linear;
-  transition: visibility 1s linear;
+  animation: ${({ open }) => (open ? fadeIn : fadeOut)} 0.3s linear;
+  transition: visibility 0.3s linear;
 `
 
 export const Container = styled.div`

@@ -20,11 +20,18 @@ export const getRicks = gql`
           name
           type
           dimension
+          residents {
+            id
+          }
         }
         location {
           id
           name
           type
+          dimension
+          residents {
+            id
+          }
         }
         image
         created

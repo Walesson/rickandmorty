@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import { useQuery } from '@apollo/client'
 import { getRicks } from '~/services/API'
-import { Search, Loading, ListCharacters } from '~/components'
+import { Search, Loading, ListCharacters, DetailModal } from '~/components'
 import { Wrapper, Overlay, Container, Header, Logo } from './styles'
 
 export const Home = () => {
-  const { data } = useQuery(getRicks)
+  const { loading, data } = useQuery(getRicks)
   const [characters, setCharacters] = useState([])
+  const [currentCharacter, setCurrentCharacter] = useState({})
+  const [openModal, setOpenModal] = useState(false)
+
   useEffect(() => {
     if (data && data?.characters) {
       setCharacters(data.characters.results)
     }
   }, [data])
 
-  // useEffect(() => {
-  //   if (openLoading !== loading) {
-  //     setOpenLoading(loading)
-  //   }
-  // }, [loading])
-
   const handleCharacter = (character) => {
-    console.info('handle', character)
+    setOpenModal(true)
+    setTimeout(() => setCurrentCharacter(character), 200)
+    console.info('currentCharacter:', currentCharacter)
   }
+
+  const closeModal = () => setOpenModal(false)
 
   return (
     <Wrapper>
       <Overlay>
-        <Loading open={characters.length <= 0} />
         <Container>
           <Header>
             <Logo />
@@ -41,6 +41,12 @@ export const Home = () => {
           />
         </Container>
       </Overlay>
+      <Loading open={loading} />
+      <DetailModal
+        open={openModal}
+        character={currentCharacter}
+        onClose={closeModal}
+      />
     </Wrapper>
   )
 }
