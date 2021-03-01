@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
+    'jest/globals': true,
   },
   extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
   parser: 'babel-eslint',
@@ -12,7 +13,7 @@ module.exports = {
     ecmaVersion: 10,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', 'prettier'],
+  plugins: ['react', 'react-hooks', 'prettier', 'jest'],
   rules: {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'prettier/prettier': 'error',
