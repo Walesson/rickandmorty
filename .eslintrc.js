@@ -32,6 +32,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     camelcase: 'off',
     semi: [2, 'never'],
+    'no-plusplus': 'off',
     'no-extra-boolean-cast': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'import/no-named-default': 'off',

@@ -39,7 +39,7 @@ export const Title = styled(Text)`
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 20px;
   color: ${({ theme }) => theme.colors.light.main};
 `
 

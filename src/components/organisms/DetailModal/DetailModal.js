@@ -13,7 +13,7 @@ import {
   SubTitleBannerImage,
 } from './styles'
 
-export const DetailModal = ({ open, character, onClose }) => (
+export const DetailModal = ({ open = false, character = {}, onClose }) => (
   <Wrapper open={open}>
     <Container>
       <BannerImage src={character?.image}>
