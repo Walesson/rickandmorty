@@ -82,7 +82,7 @@ export const Close = styled.div`
   z-index: 2;
 
   @media (max-width: 1250px) {
-    top: 100px;
+    top: 120px;
   }
 `
 
