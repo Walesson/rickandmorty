@@ -1,10 +1,29 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, keyframes } from 'styled-components'
 import { AppTheme } from './AppTheme'
+
+export const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+export const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`
 
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
   }
 
@@ -13,15 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${AppTheme.colors.light.main};
   }
 
-  @media screen and (min-width: 250px) {
-    html {
-      font-size: calc(14px + 6 * ((100vw - 320px) / 680))
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    html {
-      font-size: 18px;
-    }
+  body {
+    font-family: 'Nunito', sans-serif;
   }
 `

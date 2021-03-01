@@ -1,0 +1,5 @@
+export { ReactComponent as Logo } from './logo.svg'
+export { ReactComponent as ArrowLeft } from './arrow-left.svg'
+export { ReactComponent as ArrowRight } from './arrow-right.svg'
+export { ReactComponent as Close } from './close.svg'
+export { ReactComponent as People } from './people.svg'
