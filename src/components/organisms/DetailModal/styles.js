@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Close as UnstyledClose } from '~/assets/icons'
 import { Text } from '~/components/atoms'
 import { fadeIn, fadeOut } from '~/services/theme'
 
@@ -25,8 +26,14 @@ export const Container = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.border.main};
   box-sizing: border-box;
   border-radius: 16px;
-
   position: relative;
+  margin: 20px 0;
+
+  @media (max-width: 1250px) {
+    max-width: 100%;
+    overflow: auto;
+    max-height: 100vh;
+  }
 `
 
 export const BannerLeft = styled.div`
@@ -48,6 +55,10 @@ export const BannerLeft = styled.div`
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
   }
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
 `
 
 export const Info = styled.div`
@@ -57,13 +68,38 @@ export const Info = styled.div`
   background-color: ${({ theme }) => theme.colors.dark.dark};
   padding-left: 71px;
   z-index: 1;
+
+  @media (max-width: 1250px) {
+    overflow: auto;
+    padding: 65px;
+  }
 `
 
 export const Close = styled.div`
   top: 20px;
   left: 20px;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+
+  @media (max-width: 1250px) {
+    top: 100px;
+  }
+`
+
+export const WrapperButton = styled.div`
+  display: flex;
+  @media (max-width: 1250px) {
+    display: none;
+  }
+`
+
+export const CloseIcon = styled(UnstyledClose)`
+  display: none;
+  width: 20px;
+  cursor: pointer;
+  @media (max-width: 1250px) {
+    display: block;
+  }
 `
 
 export const BannerImage = styled.div`
@@ -78,6 +114,19 @@ export const BannerImage = styled.div`
   left: -80px;
   position: absolute;
   z-index: 999;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+`
+
+export const WrapperCard = styled.div`
+  display: none;
+  margin-top: 47px;
+  padding: 40px;
+  @media (max-width: 1250px) {
+    display: flex;
+  }
 `
 
 export const WrapperInfo = styled.div`

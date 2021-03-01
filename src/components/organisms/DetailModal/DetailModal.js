@@ -1,13 +1,16 @@
 import React from 'react'
 import { Button } from '~/components/atoms/Button'
-import { InfoSession } from '~/components/molecules'
+import { InfoSession, Card } from '~/components/molecules'
 import {
   Wrapper,
   Container,
   BannerLeft,
   Info,
   Close,
+  WrapperButton,
+  CloseIcon,
   BannerImage,
+  WrapperCard,
   WrapperInfo,
   TitleBannerImage,
   SubTitleBannerImage,
@@ -23,10 +26,22 @@ export const DetailModal = ({ open = false, character = {}, onClose }) => (
         </WrapperInfo>
       </BannerImage>
       <Close>
-        <Button label='Close' onClick={onClose} />
+        <WrapperButton>
+          <Button label='Close' onClick={onClose} />
+        </WrapperButton>
+        <CloseIcon onClick={onClose} />
       </Close>
       <BannerLeft src={character?.image} />
       <Info>
+        <WrapperCard>
+          <Card
+            img={character.image}
+            status={character.status}
+            title={character.name}
+            subTitle={character.species}
+            onClick={() => null}
+          />
+        </WrapperCard>
         <InfoSession
           title='ABOUT'
           about={`${character?.name} is a ${character?.gender} ${
