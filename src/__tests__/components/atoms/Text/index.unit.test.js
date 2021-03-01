@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { Text } from './index'
+import { Text } from '~/components/atoms'
 
 describe('Tests from Texts', () => {
   test('render Text', () => {

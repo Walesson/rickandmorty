@@ -19,7 +19,7 @@ export const InfoSession = ({
   desc,
   residents,
 }) => (
-  <Wrapper>
+  <Wrapper data-testid='info-session'>
     <Title>{title}</Title>
     {type && <Type>{type}</Type>}
     {about && <About>{about}</About>}
