@@ -7,7 +7,7 @@
 The **Rick and Morty**, is a  web application for you to meet the characters of the Rick and Morty series
 <br />
 
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg?style=flat](https://github.com/Walesson/rickandmorty)
+[![Version](https://img.shields.io/badge/version-1.0.1-green.svg?style=flat)](https://github.com/Walesson/rickandmorty)
 [![React](https://img.shields.io/badge/react-17.0.1-blue.svg?style=flat)](https://github.com/facebook/react)
 [![@walesson](https://img.shields.io/badge/contact-@walesson-blue.svg?style=flat)](https://github.com/Walesson)
 
@@ -28,7 +28,7 @@ After download / clone the repository
 yarn install
 ```
 
-## Usage
+## :video_game: Usage
 
 > Running for use
 
