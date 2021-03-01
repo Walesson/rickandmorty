@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/Walesson/rickandmorty/static/js/main.a095f303.chunk.js",
-    "main.js.map": "/Walesson/rickandmorty/static/js/main.a095f303.chunk.js.map",
-    "runtime-main.js": "/Walesson/rickandmorty/static/js/runtime-main.0931e914.js",
-    "runtime-main.js.map": "/Walesson/rickandmorty/static/js/runtime-main.0931e914.js.map",
-    "static/js/2.3bf382cf.chunk.js": "/Walesson/rickandmorty/static/js/2.3bf382cf.chunk.js",
-    "static/js/2.3bf382cf.chunk.js.map": "/Walesson/rickandmorty/static/js/2.3bf382cf.chunk.js.map",
-    "static/js/3.518dae96.chunk.js": "/Walesson/rickandmorty/static/js/3.518dae96.chunk.js",
-    "static/js/3.518dae96.chunk.js.map": "/Walesson/rickandmorty/static/js/3.518dae96.chunk.js.map",
-    "index.html": "/Walesson/rickandmorty/index.html",
-    "static/js/2.3bf382cf.chunk.js.LICENSE.txt": "/Walesson/rickandmorty/static/js/2.3bf382cf.chunk.js.LICENSE.txt",
-    "static/media/Background-loading.1f5d0c16.png": "/Walesson/rickandmorty/static/media/Background-loading.1f5d0c16.png",
-    "static/media/Background.3d7604df.png": "/Walesson/rickandmorty/static/media/Background.3d7604df.png",
-    "static/media/arrow-left.e2198ea0.svg": "/Walesson/rickandmorty/static/media/arrow-left.e2198ea0.svg",
-    "static/media/arrow-right.d1c38e35.svg": "/Walesson/rickandmorty/static/media/arrow-right.d1c38e35.svg",
-    "static/media/close.bac9f750.svg": "/Walesson/rickandmorty/static/media/close.bac9f750.svg",
-    "static/media/logo.d8bb791a.svg": "/Walesson/rickandmorty/static/media/logo.d8bb791a.svg",
-    "static/media/people.ff2117d5.svg": "/Walesson/rickandmorty/static/media/people.ff2117d5.svg"
+    "main.js": "/rickandmorty/static/js/main.a095f303.chunk.js",
+    "main.js.map": "/rickandmorty/static/js/main.a095f303.chunk.js.map",
+    "runtime-main.js": "/rickandmorty/static/js/runtime-main.90d44399.js",
+    "runtime-main.js.map": "/rickandmorty/static/js/runtime-main.90d44399.js.map",
+    "static/js/2.b190614a.chunk.js": "/rickandmorty/static/js/2.b190614a.chunk.js",
+    "static/js/2.b190614a.chunk.js.map": "/rickandmorty/static/js/2.b190614a.chunk.js.map",
+    "static/js/3.518dae96.chunk.js": "/rickandmorty/static/js/3.518dae96.chunk.js",
+    "static/js/3.518dae96.chunk.js.map": "/rickandmorty/static/js/3.518dae96.chunk.js.map",
+    "index.html": "/rickandmorty/index.html",
+    "static/js/2.b190614a.chunk.js.LICENSE.txt": "/rickandmorty/static/js/2.b190614a.chunk.js.LICENSE.txt",
+    "static/media/Background-loading.1f5d0c16.png": "/rickandmorty/static/media/Background-loading.1f5d0c16.png",
+    "static/media/Background.3d7604df.png": "/rickandmorty/static/media/Background.3d7604df.png",
+    "static/media/arrow-left.e2198ea0.svg": "/rickandmorty/static/media/arrow-left.e2198ea0.svg",
+    "static/media/arrow-right.d1c38e35.svg": "/rickandmorty/static/media/arrow-right.d1c38e35.svg",
+    "static/media/close.bac9f750.svg": "/rickandmorty/static/media/close.bac9f750.svg",
+    "static/media/logo.d8bb791a.svg": "/rickandmorty/static/media/logo.d8bb791a.svg",
+    "static/media/people.ff2117d5.svg": "/rickandmorty/static/media/people.ff2117d5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0931e914.js",
-    "static/js/2.3bf382cf.chunk.js",
+    "static/js/runtime-main.90d44399.js",
+    "static/js/2.b190614a.chunk.js",
     "static/js/main.a095f303.chunk.js"
   ]
 }
